@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap");
+
+:root {
+  --background-col: #000000;
+  --text-col: #ffffff;
+  --button-back-col: #e30813;
+  --font: "Roboto", sans-serif;
+  --accordian-col: #303030;
+  --border-col: #222222;
+  --footer-text-col: #757575;
+  --medium-font-weight: 500;
+  --bold-font-weight: 700;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font);
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 25px;
+  background-color: transparent;
+}
+
+.signup-button {
+  border: 0;
+  border-radius: 3px;
+  background-color: var(--button-back-col);
+  color: var(--text-col);
+  padding: 5px 15px;
+}
+
+#front-page {
+  background-image: url(../img/netflix-background.png);
+  background-size: contain;
+  background-repeat: repeat;
+  height: 95vh;
+}
+
+.front-page-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-col);
+  margin: 100px auto;
+  text-align: center;
+  /* width: 650px; */
+}
+
+.front-page-item .heading {
+  font-size: 32px;
+  font-weight: var(--medium-font-weight);
+  display: block;
+  width: 65%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.front-page-item {
+  margin-bottom: 16px;
+}
+
+.front-page-item .heading {
+  font-size: 64px;
+  font-weight: var(--medium-font-weight);
+}
+
+.front-page-item .sub-heading {
+  font-size: 26px;
+}
+
+.register {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.register .email-input {
+  width: 400px;
+  padding: 20px 10px;
+  display: inline-block;
+  margin-left: auto;
+}
+
+.email-submit {
+  background-color: var(--button-back-col);
+  color: var(--text-col);
+  font-size: 30px;
+  padding: 10px 15px;
+  border: 0;
+  border-radius: 3px;
+  display: inline-block;
+  margin-right: auto;
+}
+
+.front-page-item .sub-sub-heading {
+  font-size: 19px;
+}
+
+.features {
+  padding: 2rem 0;
+  background-color: var(--background-col);
+  color: var(--text-col);
+  border-bottom: 5px solid var(--border-col);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: no-wrap;
+}
+
+.feature-text {
+  text-align: left;
+  padding: 10px 25px;
+}
+
+.feature {
+  font-size: 45px;
+}
+
+.sub-feature {
+  font-size: 22px;
+}
+
+.faq {
+  padding: 4rem 0;
+  background-color: var(--background-col);
+  color: var(--text-col);
+  border-bottom: 5px solid var(--border-col);
+}
+
+.faq .feature {
+  text-align: center;
+}
+
+.card {
+  background-color: var(--accordian-col);
+  color: var(--text-col);
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+
+.card button {
+  color: var(--text-col);
+  font-size: 1.5rem;
+  outline: var(--accordian-col);
+}
+
+.card button:hover {
+  color: var(--text-col);
+}
+
+.card-header {
+  margin-bottom: 2px solid var(--background-col);
+}
+
+.accordion {
+  display: block;
+  margin: 2rem 15rem;
+}
+
+.faq .sub-sub-heading {
+  margin-top: 1.5rem;
+  font-size: 19px;
+  text-align: center;
+}
+
+.footer {
+  background-color: var(--background-col);
+  padding: 2.5rem 15rem;
+  color: var(--footer-text-col);
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-inner-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 1.5rem 0;
+}
+
+.inner-inner {
+  display: flex;
+  flex-direction: column;
+}
+
+.inner-inner a {
+  font-size: 13px;
+  margin: 0.5rem 0;
+}
+
+.footer a {
+  color: var(--footer-text-col);
+}
+
+/* @media only screen and (max-width: 550px) {
+  .front-page-item .heading {
+    font-size: 42px;
+  }
+} */
